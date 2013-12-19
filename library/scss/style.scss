@@ -92,6 +92,18 @@ img {
 	height: auto;
 	}
 
+.alignleft {
+	float: left;
+	margin: $padding;
+	margin-left: 0;
+}
+
+.alignright {
+	float: right;
+	margin: $padding;
+	margin-right: 0;
+}
+
 /*
 Elements
 */
@@ -109,15 +121,17 @@ Header
 */
 
 header {
-	background: $header;
+	//background: $header;
 	img {
 		width: 100%;
 		max-width: 550px;
 		max-height: 200px;
 		height: auto;
-		margin-bottom: -2.25rem;
+		margin-left: -100px;
+		margin-bottom: -1.25rem;
 @media screen and (max-width: $nav-break) {
-		margin-bottom: -4.5rem;
+		margin-left: 0;
+		//margin-bottom: -4.5rem;
 	}
 	}
 }
@@ -248,7 +262,7 @@ CTA
 	position: relative;
 	margin-bottom: $spacing;
 	padding: 0;
-	background: url('/assets/img/skyline_blue.jpg');
+	//background: url('/assets/img/skyline_blue.jpg');
 	background-size: cover;
 	min-height: 275px;
 
@@ -270,7 +284,7 @@ CTA
 		margin: 0;
 	}
 	h2, p {
-		background: rgba($background, 0.5);
+		background: rgba($background, 0.75);
 		padding: $padding;
 	}
 	@media (max-width: 765px) {
@@ -374,6 +388,7 @@ Services
 .services {
 	background: $background;
 	margin-bottom: $padding;
+
 	h2 {
 		padding: $padding;
 		margin-bottom: 0;
@@ -381,7 +396,7 @@ Services
 
 	.col-md-12 {
 		padding: $padding/2;
-		img {
+			img {
 		 	padding-top: $padding;
 		 	width: 100%;
 		 	margin: 0 auto;
@@ -391,7 +406,18 @@ Services
 		}
 		&>[class*="col-"] {
 			border: $padding/2 solid $background;
-			background: white;
+			&:nth-child(1) {
+				background: $sections;
+			}
+			&:nth-child(2) {
+				background: adjust-hue($sections, -15deg);
+			}
+			&:nth-child(3) {
+				background: adjust-hue($sections, -25deg);;
+			}
+			&:nth-child(4) {
+				background: adjust-hue($sections, 15deg);;
+			}
 		}
 }
 

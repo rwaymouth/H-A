@@ -34,7 +34,6 @@
 									<div class="social">
 										<i class="icon-facebook"></i>
 										<i class="icon-twitter"></i>
-										<i class="icon-google-plus"></i>
 										<i class="icon-linkedin"></i>
 									</div>
 								</footer> <?php // end article footer ?>

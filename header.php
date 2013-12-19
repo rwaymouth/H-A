@@ -29,7 +29,7 @@
 		<meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/library/images/win8-tile-icon.png">
 
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
-	
+
 		<?php // wordpress head functions ?>
 		<?php wp_head(); ?>
 		<?php // end of wordpress head ?>
@@ -45,8 +45,9 @@
 
 		<header>
             <div class="container">
-              <img src="<?php echo get_template_directory_uri();?>/library/images/Logo-trans-1.png" alt="">
-
+	            <a href="<?php echo home_url(); ?>/">
+	              	<img src="<?php echo get_template_directory_uri();?>/library/images/Logo-trans-1.png" alt="">
+				</a>
 
 
             </div>
