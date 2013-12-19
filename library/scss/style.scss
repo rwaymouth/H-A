@@ -1,0 +1,496 @@
+/******************************************************************
+Site Name: Hollywood & Associates
+Author: Pale Fire Design
+
+Stylesheet: Main Stylesheet
+
+Here's where the magic happens. Here, you'll see we are calling in
+the separate media queries. The base mobile goes outside any query
+and is called at the beginning, after that we call the rest
+of the styles inside media queries.
+******************************************************************/
+
+
+@import "sass-bootstrap-lib/bootstrap.scss";
+
+/*
+Vars
+*/
+
+$padding: 1.25rem;
+$spacing: 1rem;
+$label: rgba(255,255,255, 0.3);
+$sections: rgb(125, 150, 190);
+$background: lighten($sections, 25%);
+
+$nav-break: 768px;
+
+
+input {
+	line-height: $padding;
+	height: 2*$padding !important;
+}
+
+button {
+  color: white;
+  border-radius: 0;
+  border: none;
+  background: $sections;
+  height: 2*$padding;
+  &:hover, &:focus {
+  	background: darken($sections, 25%);
+  }
+}
+
+/*
+Basic Colors
+*/
+
+$header: $sections;
+$body: saturate(lighten($sections, 15%), 15%);
+
+blockquote {
+	margin-left: $padding;
+	width: 50%;
+	font-style: italic;
+	@media screen and (max-width: $nav-break) {
+		clear: both;
+		width: auto;
+	}
+	float: right;
+	background: rgba(0,0,0,.1);
+	border-left: 5px solid $sections;
+	p {
+		font-size: 1.15rem;
+	}
+}
+
+html, body {
+	background: $body;
+    font-family: "museo-sans",sans-serif;
+	font-size: 16px;
+	line-height: 1.55;
+	font-weight: 400;
+	width: 100%;
+	overflow-x: hidden;
+
+}
+
+
+
+h1,h2,h3,h4,h5 {
+	font-family: "franklin-gothic-urw",sans-serif;
+	font-weight: 900;
+}
+
+header, footer {
+	//background: white;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	}
+
+/*
+Elements
+*/
+
+.social {
+	padding: $padding;
+	text-align: right;
+	i {
+		font-size: 1.5rem;
+		padding: $padding/2;
+	}
+}
+/*
+Header
+*/
+
+header {
+	background: $header;
+	img {
+		width: 100%;
+		max-width: 550px;
+		max-height: 200px;
+		height: auto;
+		margin-bottom: -2.25rem;
+@media screen and (max-width: $nav-break) {
+		margin-bottom: -4.5rem;
+	}
+	}
+}
+
+	nav {
+		.active {
+			display: block;
+			& > i {
+				-webkit-transform: rotate(0.5turn);
+				transform: rotate(0.5turn)
+			}
+		}
+		.social {
+			font-family: "franklin-gothic-urw",sans-serif;
+			font-weight: 500;
+			color: white;
+			padding: 0;
+			display: inline-block;
+			i {
+				font-size: 1rem;
+				padding: $padding/2;
+			}
+		}
+
+		width: 100%;
+		margin-bottom: $padding;
+		background: $sections;
+		border-bottom: 1px solid rgba(0,0,0,.1);
+		.menu-toggle {
+			text-align: center;
+			position: relative;
+			i {
+				position: absolute;
+				width: 5rem;
+				left: 70%;
+				top: 0.5em;
+				-webkit-transition: -webkit-transform .3s ease-out;
+				transition: transform 0.3s ease-out;
+			}
+		}
+		ul {
+			display: none;
+			padding-left: 0;
+			list-style: none;
+			text-align: center;
+			& > .last {
+					float: right;
+				}
+			li {
+				background: $header;
+				display: block;
+				width: 100%;
+				padding: $padding/2 2*$padding;
+				position: relative;
+				a {
+					color: white;
+					font-family: "franklin-gothic-urw",sans-serif;
+					font-weight: 500;
+					}
+				.menu-toggle {
+					width: 5rem;
+					height: 2rem;
+					position: absolute;
+					top: 0em;
+					left: 70%;
+					i {
+						position: relative;
+						display: block;
+						color: white;
+						left: 0;
+					  }
+					.active {
+						i {
+							-webkit-transform: rotate(0.5turn);
+							transform: rotate(0.5turn);
+							}
+						}
+					}
+				ul {
+					display: none;
+					padding-left: 0;
+				}
+			}
+		}
+	@media screen and (min-width: $nav-break) {
+		.menu-toggle {
+			display: none;
+		}
+			#menu-main-menu { display: block !important;}
+			ul {
+				display: block;
+				max-width: 960px;
+				margin: 0 auto;
+				text-align: left;
+			li {
+				padding: $padding/2 2*$padding $padding/2 0;
+				position: relative;
+				display: inline-block;
+				width: auto;
+				ul {
+					display: none;
+					width: 200%;
+					border: 1px solid rgba(0,0,0,.1);
+					border-top: none;
+				}
+			&:hover ul, &:focus ul {
+				position: absolute;
+				top: 100%;
+				left: 0%;
+				display: inline-block;
+				z-index: 10;
+				background: $sections;
+				text-align: left;
+				padding-bottom: 5%;
+				padding-left: 25%;
+
+			}
+		}
+		}
+	}
+}
+
+/*
+CTA
+*/
+
+.cta {
+	position: relative;
+	margin-bottom: $spacing;
+	padding: 0;
+	background: url('/assets/img/skyline_blue.jpg');
+	background-size: cover;
+	min-height: 275px;
+
+	img {
+		width: 100%;
+		padding: 0;
+	}
+	h2 {
+		position: absolute;
+		top: $padding;
+		left: $padding;
+	}
+
+	p {
+		position: absolute;
+		bottom: $padding/2;
+		left: $padding;
+		//max-width: 50%;
+		margin: 0;
+	}
+	h2, p {
+		background: rgba($background, 0.5);
+		padding: $padding;
+	}
+	@media (max-width: 765px) {
+		h2, p {
+			position: relative;
+			left: 0;
+		}
+		p {
+			top: 0;
+		}
+
+		h2 {
+			margin-bottom: 5rem;
+		}
+
+	 }
+
+
+}
+
+/*
+Latest
+*/
+
+h2 {
+	background: $sections;
+	margin-top: 0;
+	margin-bottom: 1rem;
+	padding: $padding;
+}
+
+
+.latest {
+	padding: 0;
+	margin-bottom: $spacing;
+	background: $background;
+	&>* {
+		padding: 0 $padding;
+	}
+	h2 {
+		padding: $padding;
+	}
+	blockquote {
+		width: 100%;
+		margin-left: 0;
+	}
+	.entry {
+		//font-size: 80%;
+		position: relative;
+		ul {
+			list-style: none;
+			padding-left: 0.5%;
+			li {
+				display: block;
+				font-size: 75%;
+			}
+		}
+		h4 {
+			margin: 0;
+		}
+		p {
+
+		}
+		&:last-of-type {
+			padding-bottom: $padding;
+		}
+	}
+	hr:last-of-type {
+		display: none;
+	}
+}
+
+/*
+Sign-Up
+*/
+
+.sign-up {
+	padding: 0;
+	padding-bottom: $padding/2;
+	margin-bottom: $spacing;
+	background: $background;
+	&>* {
+		padding: 0 $padding;
+	}
+	h2 {
+		padding: $padding;
+	}
+	.input-group {
+		margin-bottom: $padding;
+	.input-group-addon {
+		background: $sections;
+		color: white;
+	}
+}
+}
+
+/*
+Services
+*/
+
+.services {
+	background: $background;
+	margin-bottom: $padding;
+	h2 {
+		padding: $padding;
+		margin-bottom: 0;
+	}
+
+	.col-md-12 {
+		padding: $padding/2;
+		img {
+		 	padding-top: $padding;
+		 	width: 100%;
+		 	margin: 0 auto;
+		 }
+		h3 {
+			text-align: center;
+		}
+		&>[class*="col-"] {
+			border: $padding/2 solid $background;
+			background: white;
+		}
+}
+
+}
+
+/*
+Footer
+*/
+
+footer {
+	background: $header;
+	.split {
+		width: 50%;
+		float: left;
+	}
+
+	.container {
+		padding: 0;
+		&>* {
+			padding: 0 $padding;
+		}
+	}
+}
+
+.about [class*="col-"] {
+	padding: 0 0 $padding;
+}
+
+.contact, .about {
+	margin-bottom: $padding;
+	.social-media {
+	padding-top: $padding;
+	}
+	.alt-background {
+		.input-group-addon, button {
+			background: $background;
+			color: black;
+   	    }
+		button:hover, button:focus {
+  			background: darken($sections, 25%);
+  			color: white;
+  		}
+	}
+}
+
+/*
+Blog
+*/
+
+article {
+	background: $background;
+	margin-bottom: $padding;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	header {
+		background: $background;
+
+		h2, {
+			padding: $padding;
+			margin-bottom: 0;
+			a {
+				color: black;
+			}
+		}
+		.meta {
+			ul {
+				margin-top: 0;
+				list-style: none;
+				padding: $padding/2 $padding;
+				li {
+					&:first-of-type {
+						font-size: 100%;
+						display: block;
+					}
+					display: inline-block;
+					font-size: 75%;
+				}
+		}
+	}
+}
+	section {
+			padding: 0 $padding $padding;
+		}
+	footer {
+		background: $sections;
+
+	}
+
+}
+
+
+
+/*
+PRINT STYLESHEET
+Feel free to customize this. Remember to add things that won't make
+sense to print at the bottom. Things like nav, ads, and forms should
+be set to display none.
+*/
+@media print {
+	@import "print";
+}
