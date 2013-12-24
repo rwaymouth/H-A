@@ -48,7 +48,6 @@ Template Name: Front Page
 				<h2>Services</h2>
 				<div id="services" class="col-md-12 clearfix">
 					<div class="col-md-3 col-sm-6">
-						<a href="<?php the_field("service_1_link");?>">
 						<div class="crop">
 						<img src="<?php the_field("service_1_image");?>" alt="">
 						</div>
@@ -56,11 +55,9 @@ Template Name: Front Page
 						<p>
 							<?php the_field("service_1_text");?>
 						</p>
-					</a>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
-						<a href="<?php the_field("service_2_link");?>">
 						<div class="crop">
 						<img src="<?php the_field("service_2_image");?>" alt="">
 						</div>
@@ -68,11 +65,9 @@ Template Name: Front Page
 						<p>
 							<?php the_field("service_2_text");?>
 						</p>
-						</a>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
-						<a href="<?php the_field("service_3_link");?>">
 						<div class="crop">
 						<img src="<?php the_field("service_3_image");?>" alt="">
 						</div>
@@ -80,11 +75,9 @@ Template Name: Front Page
 						<p>
 							<?php the_field("service_3_text");?>
 						</p>
-					</a>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
-						<a href="<?php the_field("service_4_link");?>">
 						<div class="crop">
 						<img src="<?php the_field("service_4_image");?>" alt="">
 						</div>
@@ -92,7 +85,6 @@ Template Name: Front Page
 						<p>
 							<?php the_field("service_4_text");?>
 						</p>
-					</a>
 					</div>
 
 				</div>
