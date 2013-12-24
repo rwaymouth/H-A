@@ -32,9 +32,9 @@
 
 								<footer>
 									<div class="social">
-										<i class="icon-facebook"></i>
-										<i class="icon-twitter"></i>
-										<i class="icon-linkedin"></i>
+										<a href="<?php echo $facebook; ?>"><i class="icon-facebook"></i></a>
+										<a href="<?php echo $twitter; ?>"><i class="icon-twitter"></i></a>
+										<a href="<?php echo $linkedin; ?>"><i class="icon-linkedin"></i></a>
 									</div>
 								</footer> <?php // end article footer ?>
 
