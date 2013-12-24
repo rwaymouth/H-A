@@ -265,6 +265,8 @@ CTA
 	//background: url('/assets/img/skyline_blue.jpg');
 	background-size: cover;
 	min-height: 275px;
+	// Increase the min-height to allow for the text-box to
+	// fit under the water line. Maybe try 325px?
 
 	img {
 		width: 100%;
@@ -284,6 +286,7 @@ CTA
 		margin: 0;
 	}
 	h2, p {
+		// Remove the background from the H2 element. {Scan}
 		background: rgba($background, 0.75);
 		padding: $padding;
 	}
@@ -418,6 +421,10 @@ Services
 			&:nth-child(4) {
 				background: adjust-hue($sections, 15deg);;
 			}
+		}
+		.crop {
+			max-height: 180px;
+			overflow: hidden;
 		}
 }
 
