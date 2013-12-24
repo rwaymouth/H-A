@@ -20,7 +20,8 @@
 
             function resnav(){
                 jQuery('.sub-menu').before('<div class="menu-toggle"><i class="icon-chevron-down"></i> </div>');
-                jQuery('#menu-main-menu').append('<li class="last"><div class="social"><span>Follow us:</span><i class="icon-facebook"></i><i class="icon-twitter"></i><i class="icon-linkedin"></i></div></li>');
+                //jQuery('#menu-main-menu').append('<li class="last"><div class="social"><span>Follow us:</span><i class="icon-facebook"></i><i class="icon-twitter"></i><i class="icon-linkedin"></i></div></li>');
+                jQuery('#last').appendTo('#menu-main-menu');
                 jQuery('.menu-toggle').click(function () {
                   jQuery(this).toggleClass('active');
                   jQuery(this).nextAll('ul').slideToggle().toggleClass('active');

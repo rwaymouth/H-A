@@ -57,7 +57,7 @@
 
 						<?php bones_main_nav(); ?>
 
-						<li class="last"><div class="social"><span>Follow us:</span><a href="<?php the_field('facebook');?>"><i class="icon-facebook"></i></a><?php the_field('twitter');?>"><i class="icon-twitter"></i></a><?php the_field('linkedin');?>"><i class="icon-linkedin"></i></a></div></li>
+						<li id="last" class="last"><div class="social"><span>Follow us:</span><a href="<?php the_field("facebook");?>"><i class="icon-facebook"></i></a><a href="<?php the_field('twitter');?>"><i class="icon-twitter"></i></a><a href="<?php the_field('linkedin');?>"><i class="icon-linkedin"></i></a></div></li>
 					</nav>
 
 			</header> <?php // end header ?>
