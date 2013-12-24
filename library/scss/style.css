@@ -4957,6 +4957,16 @@ img {
   max-width: 100%;
   height: auto; }
 
+.alignleft {
+  float: left;
+  margin: 1.25rem;
+  margin-left: 0; }
+
+.alignright {
+  float: right;
+  margin: 1.25rem;
+  margin-right: 0; }
+
 /*
 Elements
 */
@@ -4975,10 +4985,11 @@ header img {
   max-width: 550px;
   max-height: 200px;
   height: auto;
-  margin-bottom: -2.25rem; }
+  margin-left: -100px;
+  margin-bottom: -1.25rem; }
   @media screen and (max-width: 768px) {
     header img {
-      margin-bottom: -4.5rem; } }
+      margin-left: 0; } }
 
 nav {
   width: 100%;
@@ -5081,9 +5092,8 @@ CTA
   position: relative;
   margin-bottom: 1rem;
   padding: 0;
-  background: url("/assets/img/skyline_blue.jpg");
   background-size: cover;
-  min-height: 275px; }
+  min-height: 350px; }
   .cta img {
     width: 100%;
     padding: 0; }
@@ -5097,7 +5107,7 @@ CTA
     left: 1.25rem;
     margin: 0; }
   .cta h2, .cta p {
-    background: rgba(210, 219, 233, 0.5);
+    background: rgba(210, 219, 233, 0.75);
     padding: 1.25rem; }
   @media (max-width: 765px) {
     .cta h2, .cta p {
@@ -5178,9 +5188,21 @@ Services
       margin: 0 auto; }
     .services .col-md-12 h3 {
       text-align: center; }
+      .services .col-md-12 h3 a {
+        color: #333; }
     .services .col-md-12 > [class*="col-"] {
-      border: 0.625rem solid #d2dbe9;
-      background: white; }
+      border: 0.625rem solid #d2dbe9; }
+      .services .col-md-12 > [class*="col-"]:nth-child(1) {
+        background: #7d96be; }
+      .services .col-md-12 > [class*="col-"]:nth-child(2) {
+        background: #7da6be; }
+      .services .col-md-12 > [class*="col-"]:nth-child(3) {
+        background: #7db1be; }
+      .services .col-md-12 > [class*="col-"]:nth-child(4) {
+        background: #7d86be; }
+    .services .col-md-12 .crop {
+      height: 180px;
+      overflow: hidden; }
 
 /*
 Footer
@@ -5194,6 +5216,9 @@ footer {
     padding: 0; }
     footer .container > * {
       padding: 0 1.25rem; }
+  footer .footer {
+    padding: 0.625rem;
+    margin-bottom: 1.25rem; }
 
 .about [class*="col-"] {
   padding: 0 0 1.25rem; }
@@ -5236,7 +5261,7 @@ article {
           font-size: 100%;
           display: block; }
   article section {
-    padding: 0 1.25rem 1.25rem; }
+    padding: 1.25rem 1.25rem; }
   article footer {
     background: #7d96be; }
 

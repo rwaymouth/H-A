@@ -1,5 +1,5 @@
-# Compass is a great cross-platform tool for compiling SASS. 
-# This compass config file will allow you to 
+# Compass is a great cross-platform tool for compiling SASS.
+# This compass config file will allow you to
 # quickly dive right in.
 # For more info about compass + SASS: http://net.tutsplus.com/tutorials/html-css-techniques/using-compass-and-sass-for-css-in-your-next-project/
 
@@ -9,7 +9,7 @@
 http_path = "/"
 
 # 2. probably don't need to touch these
-css_dir = "../css"
+css_dir = "./css"
 sass_dir = "./"
 images_dir = "../images"
 javascripts_dir = "../js"
