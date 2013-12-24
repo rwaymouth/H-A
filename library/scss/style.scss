@@ -423,7 +423,7 @@ Services
 			}
 		}
 		.crop {
-			max-height: 180px;
+			height: 180px;
 			overflow: hidden;
 		}
 }
@@ -446,6 +446,10 @@ footer {
 		&>* {
 			padding: 0 $padding;
 		}
+	}
+	.footer {
+		padding: $padding/2;
+		margin-bottom: $padding;
 	}
 }
 
@@ -507,7 +511,7 @@ article {
 	}
 }
 	section {
-			padding: 0 $padding $padding;
+			padding: $padding $padding;
 		}
 	footer {
 		background: $sections;
