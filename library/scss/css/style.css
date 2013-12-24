@@ -5093,7 +5093,7 @@ CTA
   margin-bottom: 1rem;
   padding: 0;
   background-size: cover;
-  min-height: 275px; }
+  min-height: 350px; }
   .cta img {
     width: 100%;
     padding: 0; }
@@ -5188,6 +5188,8 @@ Services
       margin: 0 auto; }
     .services .col-md-12 h3 {
       text-align: center; }
+      .services .col-md-12 h3 a {
+        color: #333; }
     .services .col-md-12 > [class*="col-"] {
       border: 0.625rem solid #d2dbe9; }
       .services .col-md-12 > [class*="col-"]:nth-child(1) {

@@ -264,7 +264,7 @@ CTA
 	padding: 0;
 	//background: url('/assets/img/skyline_blue.jpg');
 	background-size: cover;
-	min-height: 275px;
+	min-height: 350px;
 	// Increase the min-height to allow for the text-box to
 	// fit under the water line. Maybe try 325px?
 
@@ -404,7 +404,9 @@ Services
 		 	width: 100%;
 		 	margin: 0 auto;
 		 }
+
 		h3 {
+			a { color: #333;}
 			text-align: center;
 		}
 		&>[class*="col-"] {
