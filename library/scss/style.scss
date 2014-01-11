@@ -493,13 +493,12 @@ article {
 	margin-right: auto;
 	header {
 		background: $background;
-
-		h2, {
+			a {
+				color: $text-color;
+			}
+		h2 {
 			padding: $padding;
 			margin-bottom: 0;
-			a {
-				color: black;
-			}
 		}
 		.meta {
 			ul {

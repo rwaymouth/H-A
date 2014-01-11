@@ -28,10 +28,10 @@
 
 								<footer>
 									<div class="social">
-										<i class="icon-facebook"></i>
-										<i class="icon-twitter"></i>
-										<i class="icon-google-plus"></i>
-										<i class="icon-linkedin"></i>
+							<a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>"><i class="icon-facebook"></i></a>
+										<a target="_blank" href="https://twitter.com/intent/tweet?text=<?php the_title();?>&url=<?php the_permalink()?>&via=HollywoodAssoc"><i class="icon-twitter"></i></a>
+										<a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink()?>L&title=<?php the_title()?>&summary=<?php get_the_excerpt()?>&source=<?php the_permalink()?>"><i class="icon-linkedin"></i></a>
+
 									</div>
 								</footer> <?php // end article footer ?>
 
