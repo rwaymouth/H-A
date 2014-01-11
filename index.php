@@ -5,7 +5,6 @@
 				<div id="inner-content" class="wrap clearfix">
 
 						<div id="main" class="eightcol first clearfix" role="main">
-
 							<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 							<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
@@ -32,9 +31,9 @@
 
 								<footer>
 									<div class="social">
-										<a href="<?php echo $facebook; ?>"><i class="icon-facebook"></i></a>
-										<a href="<?php echo $twitter; ?>"><i class="icon-twitter"></i></a>
-										<a href="<?php echo $linkedin; ?>"><i class="icon-linkedin"></i></a>
+										<a href="<?php echo $facebook ?>"><i class="icon-facebook"></i></a>
+										<a href="<?php echo $twitter ?>"><i class="icon-twitter"></i></a>
+										<a href="<?php echo $linkedin ?>"><i class="icon-linkedin"></i></a>
 									</div>
 								</footer> <?php // end article footer ?>
 
@@ -76,5 +75,4 @@
 				</div> <?php // end #inner-content ?>
 
 			</div> <?php // end #content ?>
-
 <?php get_footer(); ?>

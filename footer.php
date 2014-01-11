@@ -16,7 +16,6 @@
 		<script src="<?php echo get_template_directory_uri(); ?>/library/js/equalize.js"></script>
 
         <script>
-        	jQuery('#services').equalize('outerHeight');
 
             function resnav(){
                 jQuery('.sub-menu').before('<div class="menu-toggle"><i class="icon-chevron-down"></i> </div>');
@@ -28,9 +27,13 @@
                         event.preventDefault();
                 });
                 }
-
-                jQuery(document).ready(resnav());
-
+                function re_size(){
+                 jQuery('#services').equalize({children: 'p'});
+                }
+                resnav();
+                jQuery(window).load(function (){
+                    setTimeout('re_size()', 0);
+                });
         </script>
 	</body>
 

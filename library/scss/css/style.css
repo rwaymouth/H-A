@@ -5186,8 +5186,6 @@ Services
       padding-top: 1.25rem;
       width: 100%;
       margin: 0 auto; }
-    .services .col-md-12 a {
-      color: #333333; }
     .services .col-md-12 h3 {
       text-align: center; }
       .services .col-md-12 h3 a {
@@ -5268,7 +5266,7 @@ article {
   article footer {
     background: #7d96be; }
     article footer a {
-      color: #333333; }
+      color: #000; }
 
 /*
 PRINT STYLESHEET

@@ -43,10 +43,15 @@
 
 	<body <?php body_class(); ?>>
 		<?php
-		$facebook = "#";
-		$twitter = "http://twitter.com/HollywoodAssoc";
-		$linkedin = "http://linkedin.com/in/christyhollywood/"
+			global $facebook, $twitter, $linkedin;
+
+		 	$facebook = get_field("facebook", 100);
+			$twitter = get_field("twitter", 100);
+			$linkedin = get_field("linkedin", 100);
+
+
 		?>
+
 
 		<header>
             <div class="container">

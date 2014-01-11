@@ -42,6 +42,17 @@ Template Name: Front Page
 
 
 </div>
+<div class="col-md-4 col-md-offset-1 sign-up">
+	<h2>Newsletter</h2>
+	<p>
+    <?php echo the_field('newsletter'); ?>
+  </p>
+
+<?php echo do_shortcode('[mc4wp_form]'); ?>
+
+
+</div>
+
 			</div>
 
 			<div class="row services">
@@ -49,41 +60,57 @@ Template Name: Front Page
 				<div id="services" class="col-md-12 clearfix">
 					<div class="col-md-3 col-sm-6">
 						<div class="crop">
+						<a href="<?php the_field("service_#1_link");?>">
 						<img src="<?php the_field("service_1_image");?>" alt="">
+						</a>
 						</div>
 						<h3><?php the_field("service_1_title");?></h3>
 						<p>
 							<?php the_field("service_1_text");?>
+													<a href="<?php the_field("service_#1_link");?>">
+Find out more...</a>
 						</p>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
 						<div class="crop">
+						<a href="<?php the_field("service_#2_link");?>">
 						<img src="<?php the_field("service_2_image");?>" alt="">
+						</a>
 						</div>
 						<h3><?php the_field("service_2_title");?></h3>
 						<p>
 							<?php the_field("service_2_text");?>
+							<a href="<?php the_field("service_#2_link");?>">
+Find out more...</a>
 						</p>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
 						<div class="crop">
+							<a href="<?php the_field("service_#3_link");?>">
 						<img src="<?php the_field("service_3_image");?>" alt="">
+					</a>
 						</div>
 						<h3><?php the_field("service_3_title");?></h3>
 						<p>
 							<?php the_field("service_3_text");?>
+							<a href="<?php the_field("service_#3_link");?>">
+Find out more...</a>
 						</p>
 					</div>
 
 					<div class="col-md-3 col-sm-6">
 						<div class="crop">
+							<a href="<?php the_field("service_#4_link");?>">
 						<img src="<?php the_field("service_4_image");?>" alt="">
+					</a>
 						</div>
 						<h3><?php the_field("service_4_title");?></h3>
 						<p>
 							<?php the_field("service_4_text");?>
+								<a href="<?php the_field("service_#4_link");?>">
+Find out more...</a>
 						</p>
 					</div>
 

@@ -22,6 +22,7 @@ $spacing: 1rem;
 $label: rgba(255,255,255, 0.3);
 $sections: rgb(125, 150, 190);
 $background: lighten($sections, 25%);
+$text-color: rgb(51,51,51);
 
 $nav-break: 768px;
 
@@ -404,6 +405,9 @@ Services
 		 	width: 100%;
 		 	margin: 0 auto;
 		 }
+		 a {
+		 	color: $text-color;
+		 }
 
 		h3 {
 			a { color: #333;}
@@ -518,6 +522,9 @@ article {
 		}
 	footer {
 		background: $sections;
+		a {
+			color: $text-color;
+		}
 
 	}
 
