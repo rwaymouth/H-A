@@ -64,7 +64,7 @@ Template Name: Front Page
 						<img src="<?php the_field("service_1_image");?>" alt="">
 						</a>
 						</div>
-						<h3><?php the_field("service_1_title");?></h3>
+						<h3><a href="<?php the_field("service_#1_link");?>"><?php the_field("service_1_title");?></a></h3>
 						<p>
 							<?php the_field("service_1_text");?>
 													<a href="<?php the_field("service_#1_link");?>">
@@ -78,7 +78,7 @@ Find out more...</a>
 						<img src="<?php the_field("service_2_image");?>" alt="">
 						</a>
 						</div>
-						<h3><?php the_field("service_2_title");?></h3>
+						<h3><a href="<?php the_field("service_#2_link");?>"><?php the_field("service_2_title");?></a></h3>
 						<p>
 							<?php the_field("service_2_text");?>
 							<a href="<?php the_field("service_#2_link");?>">
@@ -92,7 +92,7 @@ Find out more...</a>
 						<img src="<?php the_field("service_3_image");?>" alt="">
 					</a>
 						</div>
-						<h3><?php the_field("service_3_title");?></h3>
+						<h3><a href="<?php the_field("service_#3_link");?>"><?php the_field("service_3_title");?></a></h3>
 						<p>
 							<?php the_field("service_3_text");?>
 							<a href="<?php the_field("service_#3_link");?>">
@@ -102,11 +102,11 @@ Find out more...</a>
 
 					<div class="col-md-3 col-sm-6">
 						<div class="crop">
-							<a href="<?php the_field("service_#4_link");?>">
+					<a href="<?php the_field("service_#4_link");?>">
 						<img src="<?php the_field("service_4_image");?>" alt="">
 					</a>
 						</div>
-						<h3><?php the_field("service_4_title");?></h3>
+						<h3><a href="<?php the_field("service_#4_link");?>"><?php the_field("service_4_title");?></a></h3>
 						<p>
 							<?php the_field("service_4_text");?>
 								<a href="<?php the_field("service_#4_link");?>">
