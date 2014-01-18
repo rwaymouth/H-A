@@ -67,7 +67,9 @@
 
 						<?php bones_main_nav(); ?>
 
-						<li id="last" class="last"><div class="social"><span>Follow us:</span><a href="<?php echo $facebook;?>"><i class="icon-facebook"></i></a><a href="<?php echo $twitter;?>"><i class="icon-twitter"></i></a><a href="<?php echo $linkedin;?>"><i class="icon-linkedin"></i></a></div></li>
+						<li id="last" class="last"><div class="social"><span>Follow us:</span><a href="<?php echo $facebook;?>"><i class="icon-facebook"></i></a><a href="<?php echo $twitter;?>"><i class="icon-twitter"></i></a><a href="<?php echo $linkedin;?>"><i class="icon-linkedin"></i></a>
+<a href="mailto:info@hollywoodassoc.com"><i class="icon-envelope"></i></a>
+						</div></li>
 					</nav>
 
 			</header> <?php // end header ?>
