@@ -48,7 +48,7 @@
 		 	$facebook = get_field("facebook", 100);
 			$twitter = get_field("twitter", 100);
 			$linkedin = get_field("linkedin", 100);
-
+			$contact_email = get_field("contact_email", 100);
 
 		?>
 

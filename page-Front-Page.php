@@ -42,13 +42,23 @@ Template Name: Front Page
 
 
 </div>
+
 <div class="col-md-4 col-md-offset-1 sign-up">
 	<h2>Newsletter</h2>
 	<p>
     <?php echo the_field('newsletter'); ?>
-  </p>
+  	</p>
 
-<?php echo do_shortcode('[mc4wp_form]'); ?>
+	<?php echo do_shortcode('[mc4wp_form]'); ?>
+</div>
+
+<div class="col-md-4 col-md-offset-1 sign-up">
+	<h2>Contact Us</h2>
+	<p>
+		<?php echo the_field('contact'); ?>
+  	</p>
+	<a href="mailto:<?php echo $contact_email?>"><button class="btn">Email</button></a>
+
 
 
 </div>
